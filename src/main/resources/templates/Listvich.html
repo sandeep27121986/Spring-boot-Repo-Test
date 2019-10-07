@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <tital>Vechical Demo</tital>
+  </head>
+  <body>
+  <div class="container">
+    <h3>
+       Details
+    </h3>
+   <hr>
+      <table class="table table-bordered table-striped">
+         <thead class="thead-dark">
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Status</th>
+         </thead>
+         <tr th:each="thevechical : ${vechical}">
+           <td th:text="${thevechical.id}"/>
+           <td th:text="${thevechical.VName}"/>
+           <td th:text="${thevechical.Status}"/>
+         </tr>
+      </table>
+    </hr>
+    </div>
+  </body>
+
+</html>
+
+
